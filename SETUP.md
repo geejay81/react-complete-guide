@@ -37,10 +37,3 @@ cd react-complete-guide
 ```
 npm start
 ```
-
-## Source Control
-- Initiate a Git repository
-```
-git init
-```
-- Create React App has created a .gitignore file so we can ignore node modules from our source control
