@@ -1,6 +1,6 @@
 # Project Setup
 
-[README](README.md)
+[README](../README.md)
 
 ## Build Workflow
 
