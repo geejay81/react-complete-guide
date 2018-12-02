@@ -13,7 +13,7 @@ touch Person.js
 import React from 'react';
 
 const person = () => {
-    return <h1>I'm the person component!</h1>
+    return <h1>I\'m the person component!</h1>
 };
 
 export default person;
@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hi, I'm a React App</h1>
+        <h1>Hi, I\'m a React App</h1>
         <Person />
       </div>
     );
