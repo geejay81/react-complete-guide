@@ -5,3 +5,4 @@ Notes and follow along coding for the Udemy course [found here](https://www.udem
 - [Project Setup](md/SETUP.md)
 - [JSX](md/JSX.md)
 - [Components](md/COMPONENTS.md)
+- [Styling](md/Styling.md)
