@@ -27,3 +27,59 @@ const style = {
 ``` jsx
 <button style={style}>
 ```
+## Radium
+### Using Radium
+- Install Radium
+```
+npm install radium --save
+```
+- Import Radium to project
+``` js
+import Radium from 'radium';
+```
+- Amend the export of the component to be a parameter of Radium higher order function
+``` js
+export default Radium(App);
+```
+- Now can add seudo styles to style javascript objects
+``` js
+const style =  {
+    ':hover': {
+        backgroundColor: 'green'
+    }
+};
+
+style[':hover'].backgroundColor = 'salmon';
+```
+### Using Radium with Media Queries
+- Import Radium and export component as parameter of Radium as section above
+- Additionally in parent component we need to import StyleRoot
+``` js
+import Radium, { StyleRoot } from 'radium';
+```
+- Create media query as JavaScript object
+``` js
+const style = {
+    '@media (min-width: 500px)': {
+        width: '450px'
+    }
+}
+```
+- Attach JavaScript object to component output
+``` js
+<div style={style}>
+```
+- Wrap parent component with the StyleRoot tag
+``` js
+<StyleRoot>
+    <div className="App">
+        <h1>Hi, I'm a React App</h1>
+        <p className={classes.join(' ')}>This is really working</p>
+        <button
+        style={style}
+        onClick={this.togglePersonHandler}>Toggle Persons</button>
+        {persons}
+    </div>
+</StyleRoot>
+```
+## Scoping CSS files with CSS Modules
